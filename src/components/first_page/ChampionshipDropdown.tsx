@@ -1,9 +1,13 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
-export default function ChampionshipDropdown() {
+type Props = {
+  selected: string;
+  setSelected: (value: string) => void;
+};
+
+export default function ChampionshipDropdown({ selected, setSelected }: Props) {
   const [isOpen, setIsOpen] = useState(false);
-  const [selected, setSelected] = useState("CHAMPIONSHIP");
 
   const championships = [
     "UEFA Champions League",
@@ -11,7 +15,6 @@ export default function ChampionshipDropdown() {
     "La Liga",
     "Serie A",
     "FIFA World Cup",
-    // "Euro Cup",
     "Asian Cup"
   ];
 
@@ -22,17 +25,17 @@ export default function ChampionshipDropdown() {
   };
 
   return (
-    <div>
+    <div className="relative">
       <button
         onClick={toggle}
-        className="flex items-center gap-x-5 w-auto h-12 px-4 py-2 bg-black/25 rounded-2xl border border-black"
+        className="flex items-center gap-x-3 w-auto h-12 px-4 py-2 bg-black/30 text-white rounded-2xl border border-black"
       >
         <span>{selected}</span>
         {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
       </button>
 
       {isOpen && (
-        <ul className="absolute z-10 mt-2 w-auto bg-white/50 border border-gray-300 rounded-md shadow-lg">
+        <ul className="absolute left-0 mt-2 w-56 bg-black/50 text-gray-400 border border-gray-300 rounded-md shadow-lg">
           {championships.map((item) => (
             <li
               key={item}

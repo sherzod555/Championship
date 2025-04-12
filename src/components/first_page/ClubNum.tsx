@@ -11,7 +11,8 @@ export default function ClubNumDropdown() {
     "12",
     "16",
     "20",
-    "24"
+    "24",
+    "Random"
   ];
 
   const toggle = () => setIsOpen(!isOpen);
@@ -21,17 +22,17 @@ export default function ClubNumDropdown() {
   };
 
   return (
-    <div>
+    <div className="relative">
       <button
         onClick={toggle}
-        className="flex items-center gap-x-5 w-auto h-12 px-4 py-2 bg-black/25 rounded-2xl border border-black"
+        className="flex items-center gap-x-3 w-auto h-12 px-4 py-2 bg-black/30 text-white rounded-2xl border border-black"
       >
         <span>{selected}</span>
         {isOpen ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
       </button>
 
       {isOpen && (
-        <ul className="absolute z-10 mt-2 w-auto bg-white/50 border border-gray-300 rounded-md shadow-lg">
+        <ul className="absolute left-0 mt-2 bg-black/50 text-gray-400 border border-gray-300 rounded-md shadow-lg">
           {clubsnum.map((item) => (
             <li
               key={item}
