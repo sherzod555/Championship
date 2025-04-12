@@ -8,12 +8,12 @@ import ClubNum from "./ClubNum";
 
 
 const backgroundImages: { [key: string]: string } = {
-  "UEFA Champions League": "url('/src/assets/ucl.png')",
-  "Premier League": "url('/src/assets/apl.png')",
-  "La Liga": "url('/src/assets/laliga.png')",
-  "Serie A": "url('/src/assets/SerieA.png')",
-  "FIFA World Cup": "url('/src/assets/worldcup.png')",
-  "Asian Cup": "url('/src/assets/asian.png')"
+  "UEFA Champions League": "url('/src/assets/ucl.jpg')",
+  "Premier League": "url('/src/assets/apl.jpg')",
+  "La Liga": "url('/src/assets/laliga.jpg')",
+  "Serie A": "url('/src/assets/SerieA.jpg')",
+  "FIFA World Cup": "url('/src/assets/worldcup.jpg')",
+  "Asian Cup": "url('/src/assets/asian.jpg')"
 };
 
 export const FIRST = () => {
