@@ -23,7 +23,7 @@ export const FIRST = () => {
 
   return (
     <main
-      className="min-h-screen bg-cover bg-center"
+      className="h-screen bg-cover bg-center"
       style={{ backgroundImage: bgImage }}
     >
       <header className="bg-black/40 backdrop-blur-sm">
