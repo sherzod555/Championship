@@ -13,7 +13,8 @@ const backgroundImages: { [key: string]: string } = {
   "La Liga": "url('/src/assets/laliga.jpg')",
   "Serie A": "url('/src/assets/SerieA.jpg')",
   "FIFA World Cup": "url('/src/assets/worldcup.jpg')",
-  "Asian Cup": "url('/src/assets/asian.jpg')"
+  "Asian Cup": "url('/src/assets/asian.jpg')",
+  "Euro Cup": "src('/src/assets/apl.jpg')"
 };
 
 export const FIRST = () => {
