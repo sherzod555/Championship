@@ -1,7 +1,7 @@
-// import APL from "../../assets/apl.png"
-// import LaLIGA from "../../assets/laliga.png"
-// import WorldCup from "../../assets/worldcup.png"
-// import UCL from "../../assets/ucl.png"
+import APL from "../../assets/apl.png"
+import LaLIGA from "../../assets/laliga.png"
+import WorldCup from "../../assets/worldcup.png"
+import UCL from "../../assets/ucl.png"
 import { useState } from "react";
 import ChampionshipDropdown from "./ChampionshipDropdown";
 import ClubNum from "./ClubNum";
@@ -13,8 +13,8 @@ const backgroundImages: { [key: string]: string } = {
   "La Liga": "url('/src/assets/laliga.jpg')",
   "Serie A": "url('/src/assets/SerieA.jpg')",
   "FIFA World Cup": "url('/src/assets/worldcup.jpg')",
-  "Asian Cup": "url('/src/assets/asian.jpg')",
-  "Euro Cup": "src('/src/assets/apl.jpg')"
+  "Asian Cup": UCL,
+ 
 };
 
 export const FIRST = () => {

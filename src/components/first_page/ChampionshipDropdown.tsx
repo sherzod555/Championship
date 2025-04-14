@@ -15,7 +15,8 @@ export default function ChampionshipDropdown({ selected, setSelected }: Props) {
     "La Liga",
     "Serie A",
     "FIFA World Cup",
-    "Asian Cup"
+    "Asian Cup",
+   
   ];
 
   const toggle = () => setIsOpen(!isOpen);
