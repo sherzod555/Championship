@@ -10,7 +10,8 @@ const backgroundImages: { [key: string]: string } = {
   "La Liga": "url('/images/laliga.jpg')",
   "Serie A": "url('/images/SerieA.jpg')",
   "FIFA World Cup": "url('/images/worldcup.jpg')",
-  "Asian Cup": "url('/images/asian.jpg')"
+  "Asian Cup": "url('/images/asian.jpg')",
+  "Euro Cup": "url('/public/images/euro.jpg')"
 };
 
 export const FIRST = () => {
@@ -34,11 +35,6 @@ export const FIRST = () => {
             </li>
             <li className="hover:scale-105 duration-150">
               <ClubNum />
-            </li>
-            <li className="hover:scale-105 duration-150">
-              <button className="flex items-center gap-x-5 w-auto h-12 px-4 py-2 bg-black/25 rounded-2xl border border-black">
-                Randomiser
-              </button>
             </li>
           </ul>
 

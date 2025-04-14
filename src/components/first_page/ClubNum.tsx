@@ -5,19 +5,18 @@ export default function ClubNumDropdown() {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState("Clubs #");
 
-  const clubsnum = [
-    "4",
-    "8",
-    "12",
-    "16",
-    "20",
-    "24",
-    "Random"
-  ];
+  const clubsnum = ["4", "8", "12", "16", "20", "24", "Random"];
 
   const toggle = () => setIsOpen(!isOpen);
+
   const handleSelect = (option: string) => {
-    setSelected(option);
+    if (option === "Random") {
+      const filtered = clubsnum.filter((num) => num !== "Random");
+      const random = filtered[Math.floor(Math.random() * filtered.length)];
+      setSelected(`${random}`);
+    } else {
+      setSelected(option);
+    }
     setIsOpen(false);
   };
 
@@ -37,7 +36,7 @@ export default function ClubNumDropdown() {
             <li
               key={item}
               onClick={() => handleSelect(item)}
-              className="px-4 py-2 hover:bg-gray-100 cursor-pointer"
+              className="px-4 py-2 hover:bg-gray-100 hover:text-black cursor-pointer"
             >
               {item}
             </li>
