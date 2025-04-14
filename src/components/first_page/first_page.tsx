@@ -21,7 +21,7 @@ export const FIRST = () => {
 
   return (
     <main
-    className="h-screen bg-cover bg-center transition-all duration-700 ease-in-out"
+    className="h-screen w-screen bg-cover bg-center transition-all duration-700 ease-in-out"
     style={{ backgroundImage: bgImage }}
     >
       <header className="bg-black/40 backdrop-blur-sm">
